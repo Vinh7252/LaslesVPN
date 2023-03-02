@@ -3,7 +3,8 @@
     font-size: 1rem;
     line-height: 1;
     color: var(--body-color);
-    white-space: nowrap
+    
+    transition: var(--transition);
 }
 
 .btn-outline{
@@ -16,7 +17,13 @@
     border-radius: var(--rounded-lg);
     border: 1px solid var(--primary-color);
     text-align: center;
+   
     
+}
+
+.btn-outline:hover{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 .btn-solid{
@@ -30,6 +37,13 @@
     max-width: 15.625rem;
 
 }
+
+.btn-solid:hover{
+    opacity: 0.8;
+}
+
+.btn-solid:active{
+    transform: translateY(-1rem);}
 
 .btn-full{
     max-width: none;

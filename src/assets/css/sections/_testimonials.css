@@ -12,6 +12,8 @@
     gap: var(--column-gap);
     
     margin-bottom: 3.75rem;
+    overflow-x: scroll;
+
 }
 
 .testimonial{
@@ -22,6 +24,12 @@
     border-radius: var(--rounded);
     padding: 1.75rem;
     /* flex: 1; */
+    flex-shrink: 0;
+    flex-basis: 40%;
+}
+
+.testimonial:hover{
+    border-color: var(--primary-color);
 }
 
 .testimanial-header{
@@ -52,4 +60,19 @@
 
 .testimanial-body{
     color: var(--heading-color);
+}
+
+@media (max-width:1024px) {
+    .testimonial{
+        flex-basis: 60%;
+    }
+    
+}
+
+
+@media (max-width:768px) {
+    .testimonial{
+        flex-basis: 80%;
+    }
+    
 }
